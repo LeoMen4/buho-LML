@@ -1,0 +1,301 @@
+body
+{
+  background-image: url("https://i.pinimg.com/736x/6d/f3/b4/6df3b41ebdbfa22c87985318ae57494a.jpg");
+  
+  background-repeat:no-repeat;
+  background-size: cover;
+
+}
+h1{
+ position: absolute;
+ top: 700px;
+    left:5%;
+    color: black;
+    animation-name: nombre;
+    animation-duration: 3s;
+    font-family: "Crafty beach", "Serenity", monospace;
+    font-size:60px
+  }
+  @keyframes nombre{
+    0%{opacity: 1;}
+    100% {opacity: 0;}
+  }
+.container 
+{
+  width: 200px;
+  height: 800px;
+  margin: 30px auto auto auto;
+}
+.body
+{
+  position: relative;
+  left: -50%;
+  top: 15%;
+  bottom: 0;
+  right: 0;
+  width: 310px;
+  height: 420px;
+  background: #3396FF;
+  border-radius: 150px;
+}
+.ear
+{
+  position: absolute;
+  background: #9933FF;
+  top: -10px;
+  width: 70px;
+  height:120px;
+  animation-name:ear;
+ animation: ear 5s infinite;
+}
+.ear:nth-child(1)
+{
+  border-radius: 100% 0% 100% 0%;
+  transform: rotate(-50deg);
+  left: 0;
+}
+.ear:nth-child(2)
+{
+  border-radius: 0% 100% 0% 0%;
+  transform: rotate(50deg);
+  right: 0;
+}
+.eyesContainer
+{
+  position: absolute;
+  top: 45px;
+  width: 160px;
+  height: 160px;
+  background: #C7DC97;
+  border-radius: 50%;
+}
+.eyesContainer:nth-child(3)
+{
+  left: 0px;
+}
+.eyesContainer:nth-child(4)
+{
+  right: 0px;
+}
+.eyesContainer::before
+{
+  content: '';
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 20px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.eyesContainer:nth-child(3)::before
+{
+  left: 10px;
+}
+.eyesContainer:nth-child(4)::before
+{
+  right: 10px;
+}
+.eyesContainer::after
+{
+  content: '';
+  position: absolute;
+  top: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: black;
+  z-index: 2;
+}
+.eyesContainer:nth-child(3)::after
+{
+  left: 30px;
+}
+.eyesContainer:nth-child(4)::after
+{
+  right: 30px;
+}
+.pupil
+{
+  position: absolute;
+  top: 70px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 5;
+}
+.eyesContainer:nth-child(3) .pupil
+{
+  left: 70px;
+}
+.eyesContainer:nth-child(4) .pupil
+{
+  right: 70px;
+}
+.mouth
+{
+  position: absolute;
+  top: 190px;
+  left: 130px;
+  width: 50px;
+  height: 50px;
+  background: #F99525;
+  clip-path: polygon(50% 150%, 0 0, 100% 0);
+}
+.belly
+{
+  position: absolute;
+  top: 255px;
+  right: 29px;
+  border-radius: 50%;
+  width: 253px;
+  height: 166px;
+  background: #C7DC97;
+  clip-path: circle(52.8% at 50% 54%);
+}
+.pens
+{
+  position: absolute;
+  top: 10px;
+  width: 52px;
+  height: 30px;
+  border-radius: 50%;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid #4A3520;
+}
+.pens:nth-child(1)
+{
+  left: 60px;
+}
+.pens:nth-child(2)
+{
+  left: 140px;
+}
+.pens:nth-child(3)
+{
+  top: 60px;
+  left: 25px;
+}
+.pens:nth-child(4)
+{
+  top: 60px;
+  left: 100px;
+}
+.pens:nth-child(5)
+{
+  top: 60px;
+  left: 180px;
+}
+.pens:nth-child(6)
+{
+  top: 90px;
+  left: 60px;
+}
+.pens:nth-child(7)
+{
+  top: 90px;
+  left: 140px;
+}
+.at {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 120px;
+  left: -55px;
+  border-radius: 50% 50% 0px 0px;
+  background: #4A3520;
+  z-index: 5;
+  animation: mymove 2s infinite;
+}
+.at:nth-child(6)
+{
+  transform: rotate(140deg);
+}
+.at:nth-child(8)
+{
+  transform: rotate(220deg);
+  left: 265px;
+}
+.ats
+{
+  position: absolute;
+  top: 119px;
+  width: 35px;
+  height: 60px;
+  background: #4A3520;
+  border-radius: 0% 0% 50% 50%;
+}
+.ats:nth-child(1)
+{
+  left: 32px;
+}
+.ats:nth-child(2)
+{
+  left: 65px;
+}
+.legs 
+{
+  position: absolute;
+  top: 400px;
+  width: 20px;
+  height: 80px;
+  background: #F99525;
+  z-index:-1;
+}
+.legs:nth-child(9)
+{
+  left: 100px;
+}
+.legs:nth-child(10)
+{
+  right: 100px;
+}
+.hoof
+{
+  position: absolute;
+  top: 80px;
+  width: 8px;
+  height: 18px;
+  background: #33ECFF;
+}
+.hoof:nth-child(1)
+{
+  top: 77px;
+  left: -5px;
+  transform: rotate(50deg);
+}
+.hoof:nth-child(2)
+{
+  left: 6px;
+}
+.hoof:nth-child(3)
+{
+  top: 77px;
+  left: 17px;
+  transform: rotate(-50deg);
+}
+
+#nombre {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: show 5s ease-in-out forwards;
+}
+
+@keyframes sh3 {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
+
+@keyframes ear{
+  0% {background-color: red;}
+  25% {background-color: yellow;}
+  50% {background-color: blue;}
+  100% {background-color: green;}
+}
